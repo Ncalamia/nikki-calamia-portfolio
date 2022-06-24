@@ -105,6 +105,7 @@ const Navbar = () => {
                                 <div className='pt-40'>
                                     <p className='uppercase tracking-widest text-[#5651e5]'>Let's Connect
                                     </p>
+{/* Bottom div icon links */}
                                     <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                         <div className='rounded-full shadow-lg shadow-black-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                             <FaLinkedinIn />

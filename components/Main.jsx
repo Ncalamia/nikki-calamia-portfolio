@@ -1,4 +1,8 @@
 import React from 'react'
+import {AiOutlineMenu, AiOutlineClose, AiOutlineGithub} from 'react-icons/ai'
+import {FaLinkedinIn} from 'react-icons/fa'
+import {HiOutlineMail} from 'react-icons/hi'
+import {BsFileEarmarkPerson} from 'react-icons/bs'
 
 const Main = () => {
   return (
@@ -15,8 +19,24 @@ const Main = () => {
                     A Software Engineer
                 </h1>
                 <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
-                I’m a software engineer with a passion for building programs that improve daily life. I am enthusiastic about learning new things and am always looking for the opportunity to create something that genuinely makes an impact. 
+                I'm a software engineer with a passion for building programs that improve daily life. I am enthusiastic about learning new things and am always looking for the opportunity to create something that genuinely makes an impact. 
                 </p>
+                <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
+                    <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+                        <div className='rounded-full shadow-lg shadow-black-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <FaLinkedinIn />
+                        </div>
+                        <div className='rounded-full shadow-lg shadow-black-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <AiOutlineGithub />
+                        </div>
+                        <div className='rounded-full shadow-lg shadow-black-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <HiOutlineMail />
+                        </div> 
+                        <div className='rounded-full shadow-lg shadow-black-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <BsFileEarmarkPerson />
+                        </div> 
+                    </div>
+                </div>
             </div>
         </div>
     </div>
