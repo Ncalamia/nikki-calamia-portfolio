@@ -10,7 +10,7 @@ import ProjectComp from './ProjectComp'
 
 const Projects = () => {
   return (
-    <div className='w-full'>
+    <div id='projects' className='w-full'>
         <div className='max-w-[1240px] mx-auto px-2 py-16'>
             <p className='text-xl tracking-widest uppercase text-[purple]'>Projects</p>
             <h2 className='py-4'>What I've Built</h2>
@@ -21,7 +21,8 @@ const Projects = () => {
 {/* Project 1 */}
                 <ProjectComp 
                     title="Essentials." 
-                    backgroundImg={HGSImg} 
+                    backgroundImg={HGSImg}
+                    projectPage='/ProjectOne' 
                     projectUrl='https://homegoods-store.herokuapp.com/'
                     tech='Django Rest Framework, React, Python, PostgreSQL'/>
 
@@ -29,13 +30,15 @@ const Projects = () => {
                 <ProjectComp 
                     title="Accomplished." 
                     backgroundImg={TDAImg} 
+                    projectPage='/ProjectTwo'
                     projectUrl='https://accomplished-to-do-app.herokuapp.com/to-do'
                     tech='Express, MongoDB, Node.js'/>
 
 {/* Project 3 */}                
                 <ProjectComp 
                     title="America's Gun Problem" 
-                    backgroundImg={AGPImg} 
+                    backgroundImg={AGPImg}
+                    projectPage='/ProjectThree' 
                     projectUrl='https://americas-gun-problem.herokuapp.com/'
                     tech='MongoDB, Express, React, PostgreSQL'/>
             </div>
