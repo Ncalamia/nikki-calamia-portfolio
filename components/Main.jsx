@@ -20,17 +20,18 @@ const Main = () => {
         setShowModalMain(true)
         setTimeout(() => {
              setShowModalMain(false)
-        }, 5000)
+        }, 6000)
     }
 
   return (
     <div id='main' className='w-full h-screen text-center'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center flex-col'>
+{/* Div that holds all of content on main page */}
             <div>
                 <p className='uppercase text-sm tracking-widest text-gray-600'>Lets Build Something together</p>
                 <h1 className='py-4 text-gray-700'>
                     Hey, I'm 
-                    <span className='text-[#5651e5]'> Nikki
+                    <span className='text-[#495f4b]'> Nikki
                     </span>
                 </h1>
                 <h1 className='py-2 text-gray-700'>
@@ -39,21 +40,34 @@ const Main = () => {
                 <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
                 I'm a software engineer with a passion for building programs that improve daily life. I am enthusiastic about learning new things and am always looking for the opportunity to create something that genuinely makes an impact. 
                 </p>
-                <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
+
+{/* Div that holds icons */}
+                <div className='flex items-center justify-center max-w-[330px] m-auto py-4'>
+{/* Icons */}
                     <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaLinkedinIn />
+{/* Icon LinkedIn */}
+                        <div className='rounded-full bg-[#808a6f] shadow-lg shadow-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <Link href='https://www.linkedin.com/in/nikki-calamia/'>
+                                <a target='_blank'>
+                                    <FaLinkedinIn />
+                                </a>
+                            </Link>
                         </div>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <AiOutlineGithub />
+{/* Icon GitHub */}
+                        <div className='rounded-full bg-[#808a6f] shadow-lg shadow-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <Link href='https://github.com/Ncalamia'>
+                                <a target='_blank'>
+                                    <AiOutlineGithub/>
+                                </a>
+                            </Link>
                         </div>
+{/* Icon Email */}
                         <CopyToClipboard text='Ncalamia2468@yahoo.com'>
-                            <div>
-                            <button onClick={() => copiedTextModalMain()}
-                            className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'><HiOutlineMail /></button>
+                            <div className='rounded-full bg-[#808a6f] shadow-lg shadow-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300' onClick={() => copiedTextModalMain()}><HiOutlineMail />
                             </div>
                         </CopyToClipboard>
-                        <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+{/* Icon Resume */}
+                        <div className='rounded-full bg-[#808a6f] shadow-lg shadow-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <Link href='https://docs.google.com/document/d/1tA8OGsFIN9cYMVe5hDVOF9zLBQN4AaWEHJ3Z82HIWWo/edit?usp=sharing'>
                                 <a target='_blank'>
                                     <BsFileEarmarkPerson/>

@@ -23,7 +23,6 @@ const Projects = () => {
                     title="Essentials." 
                     backgroundImg={HGSImg}
                     projectPage='/ProjectOne' 
-                    projectUrl='https://homegoods-store.herokuapp.com/'
                     tech='Django Rest Framework, React, Python, PostgreSQL'/>
 
 {/* Project 2 */}                

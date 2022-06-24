@@ -10,15 +10,8 @@ const ProjectComp = ({title, backgroundImg, projectPage, projectUrl, tech}) => {
         <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
             <h3 className='text-2xl text-white tracking-wider text-center'>{title}</h3>
             <p className='pb-4 pt-2 text-white text-center'>{tech}</p>
-            <Link href={projectUrl}>
-              <a target='_blank'>
-                <p className='text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>View Live Site</p>
-              </a>
-            </Link>
             <Link href={projectPage}>
-              <a target='_blank'>
-                <p className='text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>See More</p>
-              </a>
+              <p className='text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>See More</p>
             </Link>
         </div>
     </div>

@@ -9,13 +9,13 @@ import {FcCheckmark} from 'react-icons/fc'
 import { CopyToClipboard } from "react-copy-to-clipboard"
 
 
-
 const Navbar = () => {
 
 // States //
     const [nav,setNav] = useState(false)
     const [shadow, setShadow] = useState(false)
     const [showModalNav, setShowModalNav] = useState(false)
+    const [showAnimatedLogo, setShowAnimatedLogo] = useState(true)
 
 //Function for copying to clipboard
 //Set state to true when text is copied, then time out at 5 seconds
@@ -31,6 +31,15 @@ const Navbar = () => {
         setNav(!nav)
     }
 
+    //Function for copying to clipboard
+//Set state to true when text is copied, then time out at 5 seconds
+// const runAnimatedLogo = () => {
+//     setShowAnimatedLogo(true)
+//     setTimeout(() => {
+//          setShowAnimatedLogo(false)
+//     }, 5000)
+// }
+
 //On page load
     useEffect(() => {
         // if window scrolls up or down 90 pixels or more, show the shadow (sets state to true), if not hide shadow (sets state to false), event listener is 
@@ -43,22 +52,20 @@ const Navbar = () => {
         }
         //Listens for scroll of page, calls handleShadow function and turns on or off shadow 
         window.addEventListener('scroll', handleShadow)
+        setTimeout(() => {
+            setShowAnimatedLogo(false)
+       }, 3000)
     }, [])
 
 
 
     return (
-        //If shadow is true, show shadow : if false, don't show shadow
-        <div className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
-
+//If shadow is true, show shadow : if false, don't show shadow
+        <div className={shadow ? 'fixed w-full h-30 shadow-xl z-[100] bg-[#9e4e2d]' : 'fixed w-full h-30 z-[100] bg-[#9e4e2d]'}>
             <div className='flex justify-between items-center w-full h-full px-2 2=xl:px-16'>
-                <Link href='/'>
-                    <Image 
-                        src='/../public/assets/Teal-Nav-Logo.jpg' 
-                        alt='/' 
-                        width='125' 
-                        height='50' />
-                </Link>
+                    {showAnimatedLogo ? 
+                    <Image className='z-10' src='/../public/assets/NC-Logo-Lg.gif' width='120' height='120' alt='/' />
+                    : <Image className='z-0' src='/../public/assets/NC-Logo-Lg-transparent.png' width='120' height='120' alt='/' /> }
                 <div>
 {/* Links use the id set in the other components to control where they scroll to on the page */}
                     <ul className='hidden md:flex'>
@@ -91,79 +98,80 @@ const Navbar = () => {
             
 {/* Page when side Navbar is open*/}
 
-{/* If nav is true, make background transparent black : if not,no background */}
+{/* If nav is true, make background transparent black : if not, no background */}
             <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/60' : ''}>
 
 {/* Side navbar */}
 
 {/* If nav is true, "open sidebar" : if not, "hide sidebar" */}
-                    <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#dcd5e6] p-10 ease-in duration-500' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
+                    <div className={nav ? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#808a6f] p-10 ease-in duration-500' : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
 
 {/* Top of side navbar */}
                         <div className='flex w-full items-center justify-between'> 
-                            <Link href='/'>
-                                <Image src='/../public/assets/Teal-Nav-Logo.jpg' width='87' height='35' alt='/' />
-                            </Link>
-                            <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
+                         <Image className='z-0' src='/../public/assets/NC-Logo-Lg-transparent.png' width='130' height='130' alt='/' /> 
+                            <div onClick={handleNav} className='rounded-full bg-[#c18e73] shadow-lg shadow-gray-600 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
                                 <AiOutlineClose />
                             </div>
                         </div>
-                        <div className='border-b border-black-300 my-4'>
-                            <p className='w-[85%] md:w-[90%] py-4'>Let's Build something legendary together
+                        <div className='border-b border-[#495f4b] my-4'>
+                            <p className='w-[85%] md:w-[90%] py-4'>Some sort of text here
                             </p>
                         </div>
  {/* Middle & bottom of side navbar (links) */}
                             <div className='py-4 flex flex-col'>
                                 <ul className='uppercase'>
                                     <Link href='/'>
-                                        <li onClick={() => setNav(false)} className='py-4 text-sm'>Home</li>
+                                        <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#d1dbc3]'>Home</li>
                                     </Link>
                                     <Link href='/#about'>
-                                        <li onClick={() => setNav(false)} className='py-4 text-sm'>About</li>
+                                        <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#d1dbc3]'>About</li>
                                     </Link>
                                     <Link href='/#skills'>
-                                        <li onClick={() => setNav(false)} className='py-4 text-sm'>Skills</li>
+                                        <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#d1dbc3]'>Skills</li>
                                     </Link>
                                     <Link href='/#projects'>
-                                        <li onClick={() => setNav(false)} className='py-4 text-sm'>Projects</li>
+                                        <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#d1dbc3]'>Projects</li>
                                     </Link>
                                     <Link href='/#contact'>
-                                        <li onClick={() => setNav(false)} className='py-4 text-sm'>Contact</li>
+                                        <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#d1dbc3]'>Contact</li>
                                     </Link>
                                     <Link href='https://docs.google.com/document/d/1tA8OGsFIN9cYMVe5hDVOF9zLBQN4AaWEHJ3Z82HIWWo/edit?usp=sharing'>
                                     <a target='_blank'>
-                                        <li onClick={() => setNav(false)} className='py-4 text-sm'>Resume</li>
+                                        <li onClick={() => setNav(false)} className='py-4 text-sm hover:text-[#d1dbc3]'>Resume</li>
                                     </a>
                                     </Link>
                                 </ul>
 
 {/* Bottom div of side navbar */}
                                 <div className='pt-40'>
-                                    <p className='uppercase tracking-widest text-[#5651e5]'>Let's Connect
+                                    <p className='tracking-widest text-black-100 text-xl'>Let's Connect
                                     </p>
 {/* Bottom div icon links */}
                                     <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
-                                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+{/* Icon LinkedIn */}
+                                        <div className='rounded-full bg-[#d2bc97] shadow-lg shadow-gray-600 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
                                         <Link href='https://www.linkedin.com/in/nikki-calamia/'>
                                             <a target='_blank'>
                                                 <FaLinkedinIn />
                                             </a>
                                         </Link>
                                         </div>
-                                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+{/* Icon GitHub */}
+                                        <div className='rounded-full bg-[#d5a597] shadow-lg shadow-gray-600 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
                                         <Link href='https://github.com/Ncalamia'>
                                             <a target='_blank'>
-                                                <AiOutlineGithub />
+                                                <AiOutlineGithub/>
                                             </a>
                                         </Link>
                                         </div>
-                                        <CopyToClipboard text='Ncalamia2468@yahoo.com'>
-                                            <div>
-                                            <button onClick={() => copiedTextModalNav()}
-                                            className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'><HiOutlineMail /></button>
+{/* Icon Email */}
+                                        <CopyToClipboard            text='Ncalamia2468@yahoo.com'>
+                                            <div className='rounded-full bg-[#d1dbc3] shadow-lg shadow-gray-600 p-4 cursor-pointer hover:scale-105 ease-in duration-300' onClick={() => copiedTextModalMain()}>    
+                                                <HiOutlineMail />
                                             </div>
                                         </CopyToClipboard>
-                                        <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
+{/* Icon Resume*/}
+                                        <div className='rounded-full bg-[#ccb2a4] shadow-lg shadow-gray-600 p-4 cursor-pointer hover:scale-105 ease-in duration-300'>
                                         <Link href='https://docs.google.com/document/d/1tA8OGsFIN9cYMVe5hDVOF9zLBQN4AaWEHJ3Z82HIWWo/edit?usp=sharing'>
                                             <a target='_blank'>
                                                 <BsFileEarmarkPerson />
@@ -172,6 +180,7 @@ const Navbar = () => {
                                         </div> 
                                     </div>
                                 </div>
+{/* If showModalNav is true, show modal (clipboard notification) */}
                                 {showModalNav ? <div className='flex justify-center m-3 p-2 shadow-xl shadow-white-300 w-[80%] rounded-xl flex items-center justify-center border-2 border-white'>
                                             <FcCheckmark className='w-12 h-6'/>
                                             <p className='m-2'>Email address was copied to your clipboard</p>
