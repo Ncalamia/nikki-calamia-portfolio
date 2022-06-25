@@ -65,7 +65,7 @@ const Navbar = () => {
 {/* Div that holds holds top navbar content  */}
             <div className='flex justify-between items-center w-full h-full pr-6 2=xl:px-16'>
                     {showAnimatedLogo ? 
-                    <Image className='z-10' src='/../public/assets/NC-Logo-Lg.gif' width='120' height='120' alt='/' />
+                    <Image className='z-10' src='/../public/assets/NC-Logo-Lg.png' width='120' height='120' alt='/' />
                     : <Image className='z-0' src='/../public/assets/NC-Logo-Lg-transparent.png' width='120' height='120' alt='/' /> }
                 <div>
 {/* Top Navbar Links */}
