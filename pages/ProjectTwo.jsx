@@ -88,7 +88,7 @@ const ProjectOne = () => {
                 {skills.map((skill) => {
                     return (
 // {/* Div that holds each icon and name, mapping over skills array to create each skill in a card */}
-                <div className='p-8 m-3 shadow-2xl shadow-gray-500 rounded-3xl hover:scale-110 ease-in duration-300 hover:bg-[#d28b6d] bg-[#ac6551]'>
+                <div key={skill} className='p-8 m-3 shadow-2xl shadow-gray-500 rounded-3xl hover:scale-110 ease-in duration-300 hover:bg-[#d28b6d] bg-[#ac6551]'>
                   <div className='flex'>
                       <div className='m-auto'>
                           <skill.logo size={40}/>
