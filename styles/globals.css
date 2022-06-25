@@ -10,7 +10,6 @@ html {
     body {
         @apply bg-[#ccb2a4] text-[#2b3637] tracking-wide
     }
-
     h1, h2, h3, h4, h5, h6 {
         @apply font-bold
     }
@@ -25,8 +24,6 @@ html {
     li {
         @apply cursor-pointer
     }
+    
 
-    button {
-        @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#6c4ea0] to-[#aca6cf] text-white
-    }
 }

@@ -82,9 +82,6 @@ const Skills = () => {
             name: 'Bootstrap',
             logo: FaBootstrap
         },
-
-
-
     ]
 
 
@@ -98,11 +95,11 @@ const Skills = () => {
             <p className='text-2xl mb-10 tracking-widest uppercase text-[#495f4b] font-bold'>Skills</p>
 
 {/* Grid that holds all skill icons and names */}
-            <div className='flex justify-between flex-row flex-wrap m-3'>
+            <div className='flex justify-evenly flex-row flex-wrap m-3'>
 {/* Div that holds icon and name, mapping over skills array to create each skill in a card */}
                 {skills.map((skill) => {
                     return (
-                    <div className='p-8 m-3 shadow-2xl shadow-gray-500 rounded-3xl hover:scale-110 ease-in duration-300 hover:bg-[#d28b6d] bg-[#ac6551]'>
+                <div className='p-8 m-3 shadow-2xl shadow-gray-500 rounded-3xl hover:scale-110 ease-in duration-300 hover:bg-[#d28b6d] bg-[#ac6551]'>
                     <div className='flex '>
                         <div className='m-auto'>
                             <skill.logo size={40}/>

@@ -37,19 +37,19 @@ const Main = () => {
                 <h1 className='py-2 text-gray-700'>
                     A Software Engineer
                 </h1>
-                <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
+                <p className='py-4 text-gray-600 max-w-[85%] m-auto'>
                 I'm a software engineer with a passion for building programs that improve daily life. I am enthusiastic about learning new things and am always looking for the opportunity to create something that genuinely makes an impact. 
                 </p>
 
 {/* Div that holds icons */}
-                <div className='flex items-center justify-center max-w-[330px] m-auto py-4'>
+                <div className='flex justify-center items-center mx-[5%] py-4 sm:mx-[20%]'>
 {/* Icons */}
                     <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
 {/* Icon LinkedIn */}
                         <div className='rounded-full bg-[#808a6f] shadow-lg shadow-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <Link href='https://www.linkedin.com/in/nikki-calamia/'>
                                 <a target='_blank'>
-                                    <FaLinkedinIn />
+                                    <FaLinkedinIn size={20}/>
                                 </a>
                             </Link>
                         </div>
@@ -57,29 +57,30 @@ const Main = () => {
                         <div className='rounded-full bg-[#808a6f] shadow-lg shadow-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <Link href='https://github.com/Ncalamia'>
                                 <a target='_blank'>
-                                    <AiOutlineGithub/>
+                                    <AiOutlineGithub size={20}/>
                                 </a>
                             </Link>
                         </div>
 {/* Icon Email */}
                         <CopyToClipboard text='Ncalamia2468@yahoo.com'>
-                            <div className='rounded-full bg-[#808a6f] shadow-lg shadow-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300' onClick={() => copiedTextModalMain()}><HiOutlineMail />
+                            <div className='rounded-full bg-[#808a6f] shadow-lg shadow-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300' onClick={() => copiedTextModalMain()}><HiOutlineMail size={20}/>
                             </div>
                         </CopyToClipboard>
 {/* Icon Resume */}
                         <div className='rounded-full bg-[#808a6f] shadow-lg shadow-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
                             <Link href='https://docs.google.com/document/d/1tA8OGsFIN9cYMVe5hDVOF9zLBQN4AaWEHJ3Z82HIWWo/edit?usp=sharing'>
                                 <a target='_blank'>
-                                    <BsFileEarmarkPerson/>
+                                    <BsFileEarmarkPerson size={20}/>
                                 </a>
                             </Link>
                         </div> 
                     </div>
                 </div>
             </div>
-            {showModalMain ? <div className='flex flex-row py-6 shadow-xl shadow-black-300 w-[60%] h-[5%] rounded-xl flex items-center justify-center py-10 px-2 border-2 border-gray'>
-                <FcCheckmark className='w-12 h-6'/>
-                <p className='m-2'>Email address was copied to your clipboard</p>
+{/* Modal (copied to clipboard) */}
+            {showModalMain ? <div className='flex flex-row py-6 shadow-xl shadow-gray-500 w-[60%] h-[5%] rounded-xl flex items-center justify-center py-10 px-2 bg-[#808a6f] sm:px-1'>
+                <FcCheckmark className='w-12 h-10'/>
+                <p className='m-2'>Copied to clipboard</p>
             </div> : ""}
         </div>
     </div>

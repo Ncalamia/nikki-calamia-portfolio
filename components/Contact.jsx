@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image';
 import React, {useState, useEffect} from 'react';
 import { AiOutlineGithub } from 'react-icons/ai'
 import { BsFileEarmarkPerson } from 'react-icons/bs'
@@ -27,45 +28,58 @@ useEffect(() => {
 }, [])
 
   return (
-    <div id='contact' className='w-full lg:h-screen mt-10'>
+    <>
+    <div id='contact' className='w-screen h-20'></div>
+    <div className='w-full lg:h-screen mt-10'>
         <div className='max-w-[1240px] m-auto px-2 w-full'>
-            <p className='text-xl tracking-widest uppercase text-[#6c59bf]'>Contact</p>
-            <h2 className='py-4'>Get In Touch</h2>
-
-{/* Container for left and right side */}
+            <p className='text-2xl mb-10 pt-5 tracking-widest uppercase text-[#495f4b] font-bold'>Contact</p>
+{/* Div that holds contact content */}
             <div className='grid lg:grid-cols-5 gap-8'>
-{/* Left, Picture  */}
-                <div className='col-span-3 lg:col-span-2 w-full shadow-xl shadow-gray-400 rounded-xl p-4'>
+{/* Div (Picture, Text, Links) */}
+                <div className='col-span-3 lg:col-span-2 w-full shadow-xl shadow-gray-500 rounded-xl p-4'>
                     <div className='flex flex-col justify-evenly lg:p-4 h-full'>
-                        <div>
-                            <img className='rounded-xl hover:scale-105 ease-in duration-300' src="https://w7.pngwing.com/pngs/174/600/png-transparent-cat-animal-lovely-cat.png" alt="Cat"/>
+                        <div className='h-auto mx-auto flex justify-center mb-4 rounded-xl shadow-xl shadow-gray-500 hover:scale-105 ease-in duration-300 sm:w-[50%]'>
+                            <Image className='rounded-xl' src='/../public/assets/Me-Coding-2.jpeg' width='370' height='400' alt="Nikki Calamia"/>
                         </div>
                         <div>
                             <h2 className='py-2'>Nikki Calamia</h2>
-                            <p>Software Engineer</p>
-                            <p>I am avaiable for freelance or full-time positions. Contact me</p>
+                            <p className='py-2'>Software Engineer</p>
+                            <p className='py-2'>I am available for freelance or full-time positions.</p>
                         </div>
                         <div>
-                            <p className='text-lg'>Connect with me</p>
-                            <div className='flex items-center justify-between py-4 mt-3'>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                    <FaLinkedinIn />
+                            <p className='text-lg pt-4'>Connect with me</p>
+                            <div className='flex items-center justify-between sm:justify-evenly py-4 mt-3'>
+{/* Icon LinkedIn */}
+
+                                <div className='rounded-full bg-[#808a6f] shadow-lg shadow-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                    <Link href='https://www.linkedin.com/in/nikki-calamia/'>
+                                        <a target='_blank'>
+                                            <FaLinkedinIn size={20}/>
+                                        </a>
+                                    </Link>
                                 </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                    <AiOutlineGithub />
+{/* Icon GitHub */} 
+                                <div className='rounded-full bg-[#808a6f] shadow-lg shadow-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                    <Link href='https://github.com/Ncalamia'>
+                                        <a target='_blank'>
+                                            <AiOutlineGithub size={20}/>
+                                        </a>
+                                    </Link>
                                 </div>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                    <HiOutlineMail />
-                                </div> 
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                    <BsFileEarmarkPerson />
+{/* Icon Resume */}                              
+                                <div className='rounded-full bg-[#808a6f] shadow-lg shadow-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                    <Link href='https://docs.google.com/document/d/1tA8OGsFIN9cYMVe5hDVOF9zLBQN4AaWEHJ3Z82HIWWo/edit?usp=sharing'>
+                                        <a target='_blank'>
+                                            <BsFileEarmarkPerson size={20}/>
+                                        </a>
+                                    </Link>
                                 </div> 
                             </div>
                         </div>
                     </div>
                 </div>
-{/* Right, Form  */}   
-            <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4'>
+{/* Div (Form)  */}   
+            <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-500 rounded-xl lg:p-4'>
             <div className='p-4'>
               <form
                 action='https://getform.io/f/616f42f7-4206-499b-8584-b7a9a51cb441'
@@ -114,20 +128,21 @@ useEffect(() => {
                                 </textarea>
                             </div>
                         </div>
-                        <button className='w-full p-4 text-gray-100 mt-4'>Send Message</button>
+                        <button className='bg-[#495f4b] shadow-lg shadow-gray-500 rounded-xl w-[95%] hover:bg-[#e2a185] text-white py-3 m-2'>Send Message</button>
                     </form>
                 </div>
             </div>
             </div>
             <div className='flex justify-center py-12'>
                 <Link href='/'>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <HiOutlineChevronDoubleUp size={30} className='text-[purple]'/>
+                    <div className='rounded-full shadow-lg shadow-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#495f4b]'>
+                        <HiOutlineChevronDoubleUp size={30} className='text-[white]'/>
                     </div>
                 </Link>
             </div>
         </div>
     </div>
+    </>
   )
 }
 

@@ -10,10 +10,11 @@ import ProjectComp from './ProjectComp'
 
 const Projects = () => {
   return (
-    <div id='projects' className='w-full'>
-        <div className='max-w-[1240px] mx-auto px-2 py-16'>
-            <p className='text-xl tracking-widest uppercase text-[purple]'>Projects</p>
-            <h2 className='py-4'>What I've Built</h2>
+    <>
+    <div id='projects' className='w-screen h-20'></div>
+    <div className='w-full'>
+        <div className='max-w-[1240px] mx-auto px-4 py-16'>
+            <p className='text-2xl mb-10 tracking-widest uppercase text-[#495f4b] font-bold'>Projects</p>
 
 {/* Container holds all of the projects */}
             <div className='grid md:grid-cols-2 gap-8'>
@@ -23,7 +24,7 @@ const Projects = () => {
                     title="Essentials." 
                     backgroundImg={HGSImg}
                     projectPage='/ProjectOne' 
-                    tech='Django Rest Framework, React, Python, PostgreSQL'/>
+                    tech='Django, React, Python, PostgreSQL'/>
 
 {/* Project 2 */}                
                 <ProjectComp 
@@ -43,6 +44,7 @@ const Projects = () => {
             </div>
         </div>
     </div>
+  </>
   )
 }
 
