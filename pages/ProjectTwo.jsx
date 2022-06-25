@@ -69,11 +69,11 @@ const ProjectOne = () => {
 {/* Div that holds buttons(code,site) */}
           <div className='flex flex-row justify-center mt-8 items-baseline'>
             <a className='bg-[#495f4b] shadow-lg shadow-gray-500 rounded-xl hover:bg-[#e2a185] mx-4 md:mx-10' href='https://github.com/Ncalamia/Project-2'
-              target='_blank'>
+              target='_blank' rel="noreferrer">
               <button className='text-white px-5 py-2 sm:text-xl sm:px-7 sm:py-3'>Code</button>
             </a>
             <a className='bg-[#495f4b] shadow-lg shadow-gray-500 rounded-xl hover:bg-[#e2a185] mx-4 md:mx-10' href='https://accomplished-to-do-app.herokuapp.com/to-do'
-              target='_blank'>
+              target='_blank' rel="noreferrer">
               <button className='text-white px-5 py-2 sm:text-xl sm:px-7 sm:py-3'>Go To Site</button>
             </a>
           </div>

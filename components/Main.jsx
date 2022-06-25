@@ -28,9 +28,9 @@ const Main = () => {
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center flex-col'>
 {/* Div that holds all of content on main page */}
             <div>
-                <p className='uppercase text-sm tracking-widest text-gray-600'>Lets Build Something together</p>
+                <p className='uppercase text-sm tracking-widest text-gray-600'>Let&apos;s Build Something together</p>
                 <h1 className='py-4 text-gray-700'>
-                    Hey, I'm 
+                    Hey, I&apos;m 
                     <span className='text-[#495f4b]'> Nikki
                     </span>
                 </h1>
@@ -38,7 +38,7 @@ const Main = () => {
                     A Software Engineer
                 </h1>
                 <p className='py-4 text-gray-600 max-w-[85%] m-auto'>
-                I'm a software engineer with a passion for building programs that improve daily life. I am enthusiastic about learning new things and am always looking for the opportunity to create something that genuinely makes an impact. 
+                I&apos;m a software engineer with a passion for building programs that improve daily life. I am enthusiastic about learning new things and am always looking for the opportunity to create something that genuinely makes an impact. 
                 </p>
 
 {/* Div that holds icons */}

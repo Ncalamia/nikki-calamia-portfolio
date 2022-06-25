@@ -117,7 +117,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className='border-b border-[#495f4b] my-4'>
-                            <p className='md:w-[90%] py-4 tracking-widest text-black-100 text-lg'>Let's Create Together
+                            <p className='md:w-[90%] py-4 tracking-widest text-black-100 text-lg'>Let&apos;s Create Together
                             </p>
                         </div>
  {/* Middle & bottom of side navbar (links) */}
@@ -147,7 +147,7 @@ const Navbar = () => {
 
 {/* Bottom div of side navbar */}
                                 <div className='pt-20'>
-                                    <p className='tracking-widest text-black-100 text-lg'>Let's Connect
+                                    <p className='tracking-widest text-black-100 text-lg'>Let&apos;s Connect
                                     </p>
 {/* Bottom div icon links */}
                                     <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>

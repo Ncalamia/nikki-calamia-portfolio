@@ -51,7 +51,7 @@ const ProjectOne = () => {
         </div>
 {/* Div that holds Title */}
         <div className='absolute top-[85%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-          <h2 className='p-2'>America's Gun Problem</h2>
+          <h2 className='p-2'>America&apos;s Gun Problem</h2>
           <p className='px-2'>This app serves as a tool to educate, heal and create change surrounding gun control laws.</p>
         </div>
       </div>
@@ -60,7 +60,7 @@ const ProjectOne = () => {
 {/* Div that holds overview/description, buttons(code,site) */}
         <div className='w-full p-2'>
           <h2 className='text-[#495f4b] text-[2em] mb-4'>Overview</h2>
-          <p className='text-md mx-2 sm:text-2xl'>America's Gun Problem is a Full-Stack MERN application created by two like-minded software devs who want to make a change. 
+          <p className='text-md mx-2 sm:text-2xl'>America&apos;s Gun Problem is a Full-Stack MERN application created by two like-minded software devs who want to make a change. 
           <br/>
           <br/>
           With mass shootings on the rise in America in recent years, we wanted to bring awareness to the situation. This app includes: a mass shootings in America (MSA) page to bring awareness on the gravity of the issue, a list of Senators with search capabilities so constituents can reach out and advocate for stricter gun laws in their state, and a mental health forum with full CRUD functionality, allowing users to add, edit and delete posts. 
@@ -68,11 +68,11 @@ const ProjectOne = () => {
 {/* Div that holds buttons(code,site) */}
           <div className='flex flex-row justify-center mt-8 items-baseline'>
             <a className='bg-[#495f4b] shadow-lg shadow-gray-500 rounded-xl hover:bg-[#e2a185] mx-4 md:mx-10' href='https://github.com/mahamamoor/frontendapp'
-              target='_blank'>
+              target='_blank' rel="noreferrer">
               <button className='text-white px-5 py-2 sm:text-xl sm:px-7 sm:py-3'>Code</button>
             </a>
             <a className='bg-[#495f4b] shadow-lg shadow-gray-500 rounded-xl hover:bg-[#e2a185] mx-4 md:mx-10' href='https://americas-gun-problem.herokuapp.com/'
-              target='_blank'>
+              target='_blank' rel="noreferrer">
               <button className='text-white px-5 py-2 sm:text-xl sm:px-7 sm:py-3'>Go To Site</button>
             </a>
           </div>
