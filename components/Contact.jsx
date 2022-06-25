@@ -36,10 +36,10 @@ useEffect(() => {
 {/* Div that holds contact content */}
             <div className='grid lg:grid-cols-5 gap-8'>
 {/* Div (Picture, Text, Links) */}
-                <div className='col-span-3 lg:col-span-2 w-full shadow-xl shadow-gray-500 rounded-xl p-4'>
+                <div className='bg-[#dec4b9e7] col-span-3 lg:col-span-2 w-full shadow-xl shadow-gray-500 rounded-xl p-4'>
                     <div className='flex flex-col justify-evenly lg:p-4 h-full'>
-                        <div className='h-auto mx-auto flex justify-center mb-4 rounded-xl shadow-xl shadow-gray-500 hover:scale-105 ease-in duration-300 sm:w-[50%]'>
-                            <Image className='rounded-xl' src='/../public/assets/Me-Coding-2.jpeg' width='370' height='400' alt="Nikki Calamia"/>
+                        <div className='mx-auto flex justify-center mb-4 rounded-xl shadow-xl shadow-gray-500 hover:scale-105 ease-in duration-300 sm:h-[400px]'>
+                            <Image className='rounded-xl' src='/../public/assets/Me-Coding-2.jpeg' width='350px' height='400px' alt="Nikki Calamia"/>
                         </div>
                         <div>
                             <h2 className='py-2'>Nikki Calamia</h2>
@@ -79,7 +79,7 @@ useEffect(() => {
                     </div>
                 </div>
 {/* Div (Form)  */}   
-            <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-500 rounded-xl lg:p-4'>
+            <div className='bg-[#dec4b9e7] col-span-3 w-full h-auto shadow-xl shadow-gray-500 rounded-xl lg:p-4'>
             <div className='p-4'>
               <form
                 action='https://getform.io/f/616f42f7-4206-499b-8584-b7a9a51cb441'
@@ -87,7 +87,7 @@ useEffect(() => {
                         <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                             <div className='flex flex-col'>
                                 <label className='uppercase text-sm py-2'>Name</label>
-                                <input className='border-2 rounded-lg p-3 flex border-gray-300' 
+                                <input className='bg-[#f4ece4] border-2 rounded-lg p-3 flex border-gray-300' 
                                 type='text' 
                                 name='name' 
                                 value={name} 
@@ -95,7 +95,7 @@ useEffect(() => {
                             </div>
                             <div className='flex flex-col'>
                                 <label className='uppercase text-sm py-2'>Phone Number</label>
-                                <input className='border-2 rounded-lg p-3 flex border-gray-300' 
+                                <input className='bg-[#f4ece4] border-2 rounded-lg p-3 flex border-gray-300' 
                                 type='text' 
                                 name='phone' 
                                 value={phone} 
@@ -105,7 +105,7 @@ useEffect(() => {
                         <div className='grid md:grid-col-1 gap-4 w-full py-2'>
                             <div className='flex flex-col'>
                                 <label className='uppercase text-sm py-2'>Email</label>
-                                <input className='border-2 rounded-lg p-3 flex border-black-400' 
+                                <input className='bg-[#f4ece4] border-2 rounded-lg p-3 flex border-black-400' 
                                 type='email' 
                                 name='email' 
                                 value={email} 
@@ -113,7 +113,7 @@ useEffect(() => {
                             </div>
                             <div className='flex flex-col'>
                                 <label className='uppercase text-sm py-2'>Subject</label>
-                                <input className='border-2 rounded-lg p-3 flex border-black-400' 
+                                <input className='bg-[#f4ece4] border-2 rounded-lg p-3 flex border-black-400' 
                                 type='text' 
                                 name='subject' 
                                 value={subject} 
@@ -121,14 +121,14 @@ useEffect(() => {
                             </div>
                             <div className='flex flex-col'>
                                 <label className='uppercase text-sm py-2'>Message</label>
-                                <textarea className='border-2 rounded-lg p-3 border-black-300' rows='10'
+                                <textarea className='bg-[#f4ece4] border-2 rounded-lg p-3 border-black-300' rows='10'
                                 name='message'
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}>  
                                 </textarea>
                             </div>
                         </div>
-                        <button className='bg-[#495f4b] shadow-lg shadow-gray-500 rounded-xl w-[95%] hover:bg-[#e2a185] text-white py-3 m-2'>Send Message</button>
+                        <button className='bg-[#495f4b] shadow-lg shadow-gray-500 rounded-xl w-[95%] hover:bg-[#e2a185] text-[#f4ece4] py-3 m-2'>Send Message</button>
                     </form>
                 </div>
             </div>
@@ -136,7 +136,7 @@ useEffect(() => {
             <div className='flex justify-center py-12'>
                 <Link href='/'>
                     <div className='rounded-full shadow-lg shadow-gray-500 p-4 cursor-pointer hover:scale-110 ease-in duration-300 bg-[#495f4b]'>
-                        <HiOutlineChevronDoubleUp size={30} className='text-[white]'/>
+                        <HiOutlineChevronDoubleUp size={30} className='text-[#f4ece4]'/>
                     </div>
                 </Link>
             </div>
