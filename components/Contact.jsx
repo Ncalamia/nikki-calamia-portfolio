@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image';
+import ContactPic from '../public/assets/Me-Coding-2.jpeg'
 import React, {useState, useEffect} from 'react';
 import { AiOutlineGithub } from 'react-icons/ai'
 import { BsFileEarmarkPerson } from 'react-icons/bs'
@@ -39,7 +40,7 @@ useEffect(() => {
                 <div className='bg-[#dec4b9e7] col-span-3 lg:col-span-2 w-full shadow-xl shadow-gray-500 rounded-xl p-4'>
                     <div className='flex flex-col justify-evenly lg:p-4 h-full'>
                         <div className='mx-auto flex justify-center mb-4 rounded-xl shadow-xl shadow-gray-500 hover:scale-105 ease-in duration-300 sm:h-[400px]'>
-                            <Image className='rounded-xl' src='/../public/assets/Me-Coding-2.jpeg' width='350px' height='400px' alt="Nikki Calamia"/>
+                            <Image className='rounded-xl' src={ContactPic} width='350px' height='400px' alt="Nikki Calamia"/>
                         </div>
                         <div>
                             <h2 className='py-2'>Nikki Calamia</h2>

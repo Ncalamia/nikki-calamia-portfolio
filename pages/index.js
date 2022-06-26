@@ -9,10 +9,7 @@ import Contact from '../components/Contact'
 import {useState} from 'react'
 
 
-
 export default function Home() {
-
-// States 
 
 
   return (
