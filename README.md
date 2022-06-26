@@ -19,10 +19,10 @@ https://github.com/Ncalamia/nikki-calamia-portfolio
 ## Resources:
 
 Next.js Documentation
-https://nextjs.org/docs
+... https://nextjs.org/docs
 
 TailWind CSS Cheatsheet
-https://nerdcave.com/tailwind-cheat-sheet
+... https://nerdcave.com/tailwind-cheat-sheet
 
 This video helped me pick up the syntax for Tailwind CSS and concepts for next.js
-https://www.youtube.com/watch?v=CMx51wpd7g4
+... https://www.youtube.com/watch?v=CMx51wpd7g4
