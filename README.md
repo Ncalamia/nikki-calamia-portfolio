@@ -11,9 +11,9 @@ https://github.com/Ncalamia/nikki-calamia-portfolio
 
 
 ## Technolgies Used:
--React
--Next.js
--TailWind CSS framework
+*React
+*Next.js
+*TailWind CSS framework
 
 
 ## Resources:
