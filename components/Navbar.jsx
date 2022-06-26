@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import LogoImg from '../public/assets/NC-Logo-Lg-transparent.png'
+// import LogoImg from '../public/assets/NC-Logo-Lg-transparent.png'
 import React, {useState, useEffect} from 'react';
 import {AiOutlineMenu, AiOutlineClose, AiOutlineGithub} from 'react-icons/ai'
 import {FaLinkedinIn} from 'react-icons/fa'
@@ -68,7 +68,7 @@ const Navbar = () => {
                     {/* {showAnimatedLogo ? 
                     <Image className='z-10' src='/../public/assets/NC-Logo-Lg.png' width='120' height='120' alt='/' />
                     : <Image className='z-0' src='/../public/assets/NC-Logo-Lg-transparent.png' width='120' height='120' alt='/' /> } */}
-                    <Image src={LogoImg} width='120' height='120' alt='Logo' className='z-0' priority/>
+                    {/* <Image src={LogoImg} width='120' height='120' alt='Logo' className='z-0' priority/> */}
                 <div>
 {/* Top Navbar Links */}
 {/* Links use the id set in the other components to control where they scroll to on the page */}
