@@ -112,7 +112,7 @@ const Navbar = () => {
 
 {/* Top of side navbar */}
                         <div className='flex w-full items-center justify-between'> 
-                         <Image className='z-0' src={LogoImg} width='130' height='130' alt='/' /> 
+                         {/* <Image className='z-0' src={LogoImg} width='130' height='130' alt='/' />  */}
 {/* Close Button */}
                             <div onClick={handleNav} className='rounded-full bg-[#c18e73] shadow-lg shadow-gray-600 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                 <AiOutlineClose size={20}/>
