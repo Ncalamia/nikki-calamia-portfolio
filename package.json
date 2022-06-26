@@ -5,8 +5,11 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "lint": "next lint",
-    "start": "next start -p $PORT"
+    "preexport": "npm run build",
+    "export": "next export",
+    "prestart": "npm run export",
+    "start": "serve out",
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "^12.1.6",
