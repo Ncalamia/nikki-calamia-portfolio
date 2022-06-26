@@ -7,6 +7,7 @@ import {HiOutlineMail} from 'react-icons/hi'
 import {BsFileEarmarkPerson} from 'react-icons/bs'
 import {FcCheckmark} from 'react-icons/fc'
 import { CopyToClipboard } from "react-copy-to-clipboard"
+import logoPic from '../public/assets/NC-Logo-Lg-transparent.png'
 
 
 const Navbar = () => {
@@ -67,7 +68,7 @@ const Navbar = () => {
                     {/* {showAnimatedLogo ? 
                     <Image className='z-10' src='/../public/assets/NC-Logo-Lg.png' width='120' height='120' alt='/' />
                     : <Image className='z-0' src='/../public/assets/NC-Logo-Lg-transparent.png' width='120' height='120' alt='/' /> } */}
-                    <Image className='z-0' src='/../public/assets/NC-Logo-Lg-transparent.png' width='120' height='120' alt='/' />
+                    <Image src={logoPic} width='120' height='120' alt='Logo' className='z-0' priority/>
                 <div>
 {/* Top Navbar Links */}
 {/* Links use the id set in the other components to control where they scroll to on the page */}
