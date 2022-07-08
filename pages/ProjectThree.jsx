@@ -26,6 +26,10 @@ const ProjectOne = () => {
             name: 'MongoDB',
             logo: SiMongodb
         },
+        {
+          name: 'MongoDB',
+          logo: SiMongodb
+      },
         
     ]
 

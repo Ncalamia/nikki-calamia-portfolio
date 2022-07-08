@@ -97,7 +97,7 @@ const ProjectOne = () => {
                       </div>
                   </div>
               </div>
-             )})}
+              )})}
           </div>
         </div>
 {/* "Back" link */}

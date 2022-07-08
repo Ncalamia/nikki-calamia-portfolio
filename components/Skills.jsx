@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
 import {useState} from 'react'
-import {SiHtml5, SiJavascript, SiExpress, SiNodedotjs, SiMongodb, SiPostgresql, SiPython, SiJquery, SiDjango, SiNextdotjs, SiMaterialui, SiTailwindcss} from 'react-icons/si'
+import {SiHtml5, SiJavascript, SiExpress, SiNodedotjs, SiMongodb, SiPostgresql, SiPython, SiJquery, SiDjango, SiNextdotjs, SiMaterialui, SiTailwindcss, SiBulma} from 'react-icons/si'
 import {AiOutlineConsoleSql, AiOutlineGithub} from 'react-icons/ai'
 import {DiCss3} from 'react-icons/di'
 import {VscJson} from 'react-icons/vsc'
@@ -81,6 +81,10 @@ const Skills = () => {
         {
             name: 'Bootstrap',
             logo: FaBootstrap
+        },
+        {
+            name: 'Bulma',
+            logo: SiBulma
         },
         {
             name: 'GitHub',

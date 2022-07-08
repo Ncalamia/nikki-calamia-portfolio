@@ -4,6 +4,7 @@ import React from 'react'
 import AGPImg from '../public/assets/projects/AGP.png'
 import HGSImg from '../public/assets/projects/HomeGoodsStore.png'
 import TDAImg from '../public/assets/projects/ToDoApp.png'
+import COImg from '../public/assets/projects/Co-Operate(2).jpg'
 import ProjectComp from './ProjectComp'
 
 
@@ -19,6 +20,13 @@ const Projects = () => {
 {/* Container holds all of the projects */}
             <div className='grid md:grid-cols-2 gap-8'>
 
+{/* Project 4 */}                
+                <ProjectComp 
+                    title="Co-Operate" 
+                    backgroundImg={COImg}
+                    projectPage='/ProjectFour' 
+                    projectUrl='https://co-operate-frontend.herokuapp.com/'
+                    tech='React, Django, Python, PostgreSQL, Bulma'/>
 {/* Project 1 */}
                 <ProjectComp 
                     title="Essentials." 
@@ -32,7 +40,7 @@ const Projects = () => {
                     backgroundImg={TDAImg} 
                     projectPage='/ProjectTwo'
                     projectUrl='https://accomplished-to-do-app.herokuapp.com/to-do'
-                    tech='Express, MongoDB, Node.js'/>
+                    tech='Express, MongoDB, Node.js, Mongoose'/>
 
 {/* Project 3 */}                
                 <ProjectComp 
@@ -40,7 +48,7 @@ const Projects = () => {
                     backgroundImg={AGPImg}
                     projectPage='/ProjectThree' 
                     projectUrl='https://americas-gun-problem.herokuapp.com/'
-                    tech='MongoDB, Express, React, PostgreSQL'/>
+                    tech='MongoDB, Express, React, Mongoose'/>
             </div>
         </div>
     </div>

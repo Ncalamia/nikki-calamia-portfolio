@@ -19,16 +19,16 @@ const Main = () => {
     const copiedTextModalMain = () => {
         setShowModalMain(true)
         setTimeout(() => {
-             setShowModalMain(false)
+            setShowModalMain(false)
         }, 6000)
     }
 
-  return (
+    return (
     <div id='main' className='w-full h-screen text-center'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center flex-col'>
 {/* Div that holds all of content on main page */}
             <div>
-                <p className='uppercase text-sm tracking-widest text-gray-600'>Let&apos;s Build Something together</p>
+                <p className='uppercase text-sm tracking-widest text-gray-600 mt-10'>Let&apos;s Build Something together</p>
                 <h1 className='py-4 text-gray-700'>
                     Hey, I&apos;m 
                     <span className='text-[#495f4b]'> Nikki
@@ -84,6 +84,6 @@ const Main = () => {
             </div> : ""}
         </div>
     </div>
-  )
+    )
 }
 export default Main

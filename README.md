@@ -26,3 +26,4 @@ Tailwind CSS Cheatsheet
 
 This video helped me pick up the syntax for Tailwind CSS and concepts for Next.js
 [Video](https://www.youtube.com/watch?v=CMx51wpd7g4)
+
